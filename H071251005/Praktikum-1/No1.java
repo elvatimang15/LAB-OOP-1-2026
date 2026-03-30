@@ -21,7 +21,7 @@ public class No1 {
             String pertama = kata[i].substring(0,1).toUpperCase();
             String sisa = kata[i].substring(1).toLowerCase();
 
-            hasil += pertama + sisa + " ";
+            hasil += pertama + sisa + " " ;
         }
 
         System.out.println("Hasil : " + hasil);

@@ -1,16 +1,7 @@
 import java.util.Scanner;
 
 public class No4 {
-
-    static int faktorial(int n) {
-        if (n == 0 || n == 1) {
-            return 1;
-        } else {
-            return n * faktorial(n - 1);
-        }
-    }
-
-    public static void main(String[] args) {
+ public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Input : ");
@@ -19,5 +10,16 @@ public class No4 {
         int hasil = faktorial(n);
 
         System.out.println("Output : " + hasil);
+
+        input.close();
+    }
+     static int faktorial(int n) {
+
+        if (n == 1) {
+            return 1;
+        }
+
+        return n * faktorial(n - 1);
     }
 }
+   

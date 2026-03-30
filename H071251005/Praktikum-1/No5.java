@@ -6,7 +6,7 @@ public class No5 {
             Scanner input = new Scanner(System.in);
 
             int[][] nums = {
-                {1, 2, 3},
+                {2, 2, 2},
                 {4, 5, 6},
                 {7, 8, 9}
             };
@@ -21,20 +21,17 @@ public class No5 {
                     if (nums[i][j] == cari) {
                         System.out.println("Found " + cari + " at [" + i + "][" + j + "]");
                         found = true;
-                        break;
                     }
-                }
-                if (found) {
-                    break;
                 }
             }
 
             if (!found) {
                 System.out.println("Angka tidak ditemukan");
             }
-
+            input.close();
         } catch (Exception e) {
             System.out.println("Input harus berupa angka");
         }
+        
     }
 }

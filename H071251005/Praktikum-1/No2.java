@@ -4,10 +4,11 @@ public class No2 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Masukkan tanggal (dd-mm-yy): ");
+        System.out.print("Masukkan tanggal (dd-mm-yy): ");
         String tanggal = input.nextLine();
 
         konversiTanggal(tanggal);
+        input.close();
 
     }
      static void konversiTanggal(String tanggal){
@@ -16,7 +17,15 @@ public class No2 {
 
         int hari = Integer.parseInt(bagian[0]);
         int bulan = Integer.parseInt(bagian[1]);
-        int tahun = Integer.parseInt(bagian[2]) + 2000;
+        int tahun = Integer.parseInt(bagian[2]);
+        int tahunSementara = 0;
+    
+        if (tahun > 26) {
+            tahunSementara = 1900;
+        }else{
+            tahunSementara = 2000;
+        }
+        tahun += tahunSementara;
 
         String namaBulan = "";
 

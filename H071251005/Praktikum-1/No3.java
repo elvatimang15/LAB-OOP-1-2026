@@ -12,6 +12,8 @@ public class No3 {
         boolean adaHurufKecil = false;
         boolean adaAngka = false;
 
+        input.close();
+
         for (int i = 0; i < password.length(); i++) {
             char ch = password.charAt(i);
 
