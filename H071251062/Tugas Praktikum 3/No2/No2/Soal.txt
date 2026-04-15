@@ -1,0 +1,20 @@
+Soal:
+
+Buatlah sebuah class Mobil dengan ketentuan sebagai berikut:
+
+Class Mobil memiliki atribut:
+nama (String) → menyimpan nama mobil
+kecepatan (int) → menyimpan kecepatan mobil saat ini
+
+Buatlah constructor untuk menginisialisasi:
+nama sesuai input
+kecepatan awal bernilai 0
+
+Buat method:
+accelerate(int nilai) → untuk menambah kecepatan mobil
+brake(int nilai) → untuk mengurangi kecepatan mobil
+
+Jika kecepatan kurang dari 0, maka set kecepatan menjadi 0
+
+Tambahkan method:
+getKecepatan() → untuk mengambil nilai kecepatan saat ini
